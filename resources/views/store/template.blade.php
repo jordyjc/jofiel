@@ -24,8 +24,12 @@
     @yield('content')
     @include('store.partials.footer')
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!--Para ser incluida necesita un jquery-->
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <!-- Se incluye el jquery de pinterest-->
 
