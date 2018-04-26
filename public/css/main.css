@@ -1,0 +1,124 @@
+body
+{
+    background: lightslategray;
+    font-family: 'Poiret One', cursive;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Lobster Two', cursive;
+}
+
+/* Nav --------------*/
+
+.main-tittle
+{
+    color: lightslategrey !important;
+    font-size: 35px;
+}
+
+/*Footer ------------*/
+
+footer
+{
+    background: #222;
+    text-align: center;
+}
+
+footer p
+{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+footer h3
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+footer h4
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(154, 240, 128);
+}
+
+footer a
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+ul.redes li
+{
+    display: inline-block;
+    display: ruby-base-container;
+}
+
+ul.redes a
+{
+    color: lightslategrey;
+}
+
+.avatar
+{
+    border: 4px solid lightslategrey;
+    border-radius: 70%;
+    float: left;
+    height: 100px;
+    width: 100px;
+
+}
+
+
+/* Catalogo --------------------*/
+
+#products 
+{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+img 
+{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.white-panel 
+{
+    position: absolute;
+    background: white;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+.white-panel h1 
+{
+    font-size: 1em;
+}
+
+.white-panel h1 a 
+{
+    color: #A92733;
+}
+
+
+/* Detalle del Producto-----------------*/
+
+.product-block
+{
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+/* Slider -------------------------------*/
+
+.navbar
+{
+    margin-bottom: 0px;
+}

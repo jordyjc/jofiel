@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('name',100);
             $table->string('slug',100);
             $table->string('description',500);
+            $table->string('extract',200);
             $table->decimal('price',5, 2);
             $table->string('image',255);
             $table->integer('stock')->unsigned();

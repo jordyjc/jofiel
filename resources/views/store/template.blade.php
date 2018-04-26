@@ -11,6 +11,13 @@
     <!--Fuente de iconos-->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Poiret+One" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    
+
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 </head>
 <body>
     @include('store.partials.nav')
@@ -20,5 +27,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!--Para ser incluida necesita un jquery-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- Se incluye el jquery de pinterest-->
+
+    <script src="{{ asset('js/pinterest_grid.js') }}"></script>
+
+    <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
