@@ -18,7 +18,8 @@
                     </span>
                 </h3>
                 <a class="btn btn-warning" 
-                    href="#"><i class="fa fa-cart-plus"></i> Lo quiero
+                    href="{{ route('cart-add', $product->slug) }}">
+                    <i class="fa fa-cart-plus"></i> Lo quiero
                 </a>
                 <a class="btn btn-primary" 
                     href="{{ route ('product-detail', $product->slug) }}">

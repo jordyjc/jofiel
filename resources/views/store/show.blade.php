@@ -24,7 +24,8 @@
                     </h3>
                     <p>{{$product->color}}</p>
                     <p>
-                        <a class="btn btn-warning btn-block" href="#"> 
+                        <a class="btn btn-warning btn-block" 
+                            href="{{ route('cart-add', $product->slug) }}"> 
                             <i class="fa fa-cart plus fa-2x "></i> Lo quiero</a>
                     </p>
                 </div>
