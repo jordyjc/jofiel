@@ -2,7 +2,7 @@
     CREA EL NAVBAR DE LA PÁGINA A TRAVÉS DE UN BOOTSWATCH
 -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand  main-tittle" href="{{ route('home') }}">Stora</a>
+    <a class="navbar-brand  main-tittle" href="{{ route('stora') }}">Stora</a>
   
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="nav navbar-nav">
@@ -22,20 +22,8 @@
         <li class="nav-item">
             <a class="nav-link" href="">Contacto</a><span class="sr-only">(current)</span> 
         </li>
-
-        <div class="dropdown">
-          
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" 
-              role="button" aria-haspopup="true" aria-expanded="false">
-                  <i class=" fa fa-user"></i>
-          </a>
-          
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li>
-              <a class="dropdown-item" href="#">Inicio de Sesión</a>
-            </li>
-          </ul>
-        </div>
+<!-- Vista Parcial del Inicio de Sesión-->
+        @include('store.partials.menu-user')
       </ul>
     </div>
 </nav>

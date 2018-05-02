@@ -19,7 +19,7 @@ Route::bind('product', function($slug)
 });
 
 Route::get('/', [
-    'as' => 'home',
+    'as' => 'stora',
     'uses' => 'StoreController@index'
     ]);
 
@@ -57,4 +57,48 @@ Route::get('product/{slug}', [
         'as' => 'cart-update',
         'uses' => 'CartController@update'
     ]);
+
+    // Valida que el usuario haya iniciado sesion
+
+    Route::get('order-detail', [
+        'middleware' => 'auth',
+        'as' => 'order-detail',
+        'uses' => 'CartController@orderDetail'
+    ]);
+
+
+  /*  
+    // Rutas de Autenticación
     
+    Route::get('auth/login', [
+        'as' => 'login-get',
+        'uses' => 'Auth\LoginController@getLogin'
+    ]);
+
+    Route::post('auth/login', [
+        'as' => 'login-post',
+        'uses' => 'Auth\LoginController@postLogin'
+    ]);
+
+    Route::get('auth/logout', [
+        'as' => 'logout',
+        'uses' => 'Auth\LoginController@logout'
+    ]);
+
+    // Rutas de Registro
+
+    Route::get('auth/register', [
+        'as' => 'register-get',
+        'uses' => 'Auth\AuthController@getRegister'
+    ]);
+
+    Route::post('auth/register', [
+        'as' => 'register-post',
+        'uses' => 'Auth\AuthController@postRegister'
+    ]);
+
+    */
+   
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

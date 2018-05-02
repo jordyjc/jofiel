@@ -89,4 +89,18 @@ class CartController extends Controller
         }
         return $total;
     }
+
+    // Detalle del Pedido
+
+    public function orderDetail()
+    {
+        // Verifica que por lo menos haya un item en el carrito
+        if(count(\Session::get('cart')) <= 0) return redirect()->route('stora');
+
+        // Guarda lo que hay en la variable del carrito
+        $cart = \Session::get('cart');
+        $total = $this->total();
+
+        return  view('store.order-detail', compact('cart', 'total'));
+    }
 }

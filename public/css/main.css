@@ -106,6 +106,16 @@ img
     color: #A92733;
 }
 
+.white-panel:hover
+{
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    margin-top: -5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
 
 /* Detalle del Producto-----------------*/
 
@@ -149,3 +159,32 @@ img
 {
     width: 50px;
 }
+
+.margenes
+{
+    margin-top: 68px;
+    margin-right: 10px;
+    margin-bottom: 68px;
+    margin-left: 10px;
+}
+
+.arriba
+{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#header h3 
+{
+    display:inline; 
+}
+
+/* Detalle del pedido-----------------*/
+.page
+{
+    background: #fff;
+    border-radius: 1em;
+    margin-bottom: 80px;
+    padding: 4em;
+}
+
