@@ -29,5 +29,11 @@
         </div>
         @endforeach
     </div>
+
+    <hr>
+
+    <?php echo $products->render(); ?>
 </div>
+
+
 @stop

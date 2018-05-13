@@ -22,7 +22,7 @@ class ProductTableSeeder extends Seeder
 				'price' 		=> 275.00,
 				'image' 		=> 'http://www.truffleshuffle.co.uk/store/images_high_res/Mens_Red_Batman_Graffiti_Logo_T_Shirt_hi_res.jpg',
                 'stock' 		=> 10,
-                'color'         => 'Rojo',
+                'visible'       => 1,
 				'created_at' 	=> new DateTime,
 				'updated_at' 	=> new DateTime,
 				'category_id' 	=> 1
@@ -35,7 +35,7 @@ class ProductTableSeeder extends Seeder
 				'price' 		=> 255.00,
 				'image' 		=> 'http://www.truffleshuffle.co.uk/store/images_high_res/Mens_Blue_Distressed_Superman_Logo_T_Shirt_hi_res.jpg',
                 'stock' 		=> 10,
-                'color'         => 'Rojo',
+                'visible'       => 1,
 				'created_at' 	=> new DateTime,
 				'updated_at' 	=> new DateTime,
 				'category_id' 	=> 1
@@ -48,7 +48,7 @@ class ProductTableSeeder extends Seeder
 				'price' 		=> 300.00,
 				'image' 		=> 'http://img5a.flixcart.com/image/t-shirt/f/g/q/fsbk-bruce-lee-sayitloud-xl-700x700-imadtkffxfhgsday.jpeg',
                 'stock' 		=> 10,
-                'color'         => 'Rojo',
+                'visible'       => 1,
 				'created_at' 	=> new DateTime,
 				'updated_at' 	=> new DateTime,
 				'category_id' 	=> 1
@@ -61,7 +61,7 @@ class ProductTableSeeder extends Seeder
 				'price' 		=> 475.00,
 				'image' 		=> 'http://rlv.zcache.com/funny_computer_geek_t_shirt_tshirt-r537052a6a7b94b028e47b274c099fe24_804g5_324.jpg',
                 'stock' 		=> 10,
-                'color'         => 'Rojo',
+                'visible'       => 1,
 				'created_at' 	=> new DateTime,
 				'updated_at' 	=> new DateTime,
 				'category_id' 	=> 2
@@ -74,7 +74,7 @@ class ProductTableSeeder extends Seeder
 				'price' 		=> 280.00,
 				'image' 		=> 'https://www.nerdyshirts.com/media/catalog/product/cache/1/image/400x445/9df78eab33525d08d6e5fb8d27136e95/g/e/geek_1.jpg',
                 'stock' 		=> 10,
-                'color'         => 'Rojo',
+                'visible'       => 1,
 				'created_at' 	=> new DateTime,
 				'updated_at' 	=> new DateTime,
 				'category_id' 	=> 2
@@ -87,7 +87,7 @@ class ProductTableSeeder extends Seeder
 				'price' 		=> 275.00,
 				'image' 		=> 'http://bobstshirtcompany.net/media/catalog/product/cache/1/image/650x650/9df78eab33525d08d6e5fb8d27136e95/i/_/i_know_html.jpg',
                 'stock' 		=> 10,
-                'color'         => 'Rojo',
+                'visible'       => 1,
 				'created_at' 	=> new DateTime,
 				'updated_at' 	=> new DateTime,
 				'category_id' 	=> 2
@@ -100,7 +100,7 @@ class ProductTableSeeder extends Seeder
 				'price' 		=> 275.00,
 				'image' 		=> 'http://www.koszulkomat.eu/images4/preview/14/1430_7-0.png',
                 'stock' 		=> 10,
-                'color'         => 'Rojo',
+                'visible'       => 1,
 				'created_at' 	=> new DateTime,
 				'updated_at' 	=> new DateTime,
 				'category_id' 	=> 1
@@ -113,7 +113,7 @@ class ProductTableSeeder extends Seeder
 				'price' 		=> 275.00,
 				'image' 		=> 'http://cdn.somethinggeeky.com/assets/images/products/amazonlarge/4ffed02898033.jpg',
                 'stock' 		=> 10,
-                'color'         => 'Rojo',
+                'visible'       => 1,
 				'created_at' 	=> new DateTime,
 				'updated_at' 	=> new DateTime,
 				'category_id' 	=> 2

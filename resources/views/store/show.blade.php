@@ -33,7 +33,7 @@
         </div>
     </div> <hr>
 
-    <p><a class="btn btn-primary" href="{{ route('home') }}"> 
+    <p><a class="btn btn-primary" href="{{ route('stora') }}"> 
         <i class="fa fa-chevron circle-lef"></i> Regresar</a></p>
 </div>
 @stop

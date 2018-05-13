@@ -19,6 +19,7 @@ class CreateCategoriesTable extends Migration
             $table->string('name',100);
             $table->string('slug',100);
             $table->string('description',500);
+            $table->string('color', 50);
         });
     }
 

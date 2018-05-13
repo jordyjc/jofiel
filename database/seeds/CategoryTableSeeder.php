@@ -20,13 +20,16 @@ class CategoryTableSeeder extends Seeder
                 'slug' => 'super heroes',
                 'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 Et maxime, reiciendis ducimus hic rem consequatur ipsam laborum possimus 
-                cum totam minus optio, accusantium quod.' 
+                cum totam minus optio, accusantium quod.',
+                'color' => '#440022'
+
             ],
 
             [
                 'name' => 'Geek',
                 'slug' => 'geek',
-                'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' 
+                'description' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.' ,
+                'color' => '#440022'
             ]
         );
 

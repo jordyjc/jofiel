@@ -14,6 +14,8 @@ class StoreController extends Controller
     {
         $products = Product::all();
         //dd($products);
+        $products = Product::orderBy('name')->paginate(10);
+
         return view('store.index', compact('products'));
     }
 

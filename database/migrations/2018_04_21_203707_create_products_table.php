@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->decimal('price',5, 2);
             $table->string('image',255);
             $table->integer('stock')->unsigned();
-            $table->string('color',20);
+            $table->boolean('visible');
             $table->integer('category_id')->unsigned();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();

@@ -18,6 +18,27 @@ Route::bind('product', function($slug)
     return App\Product::where('slug', $slug) -> first();
 });
 
+
+// Inyección de dependecnias de Categoria
+
+Route::bind('category', function ($category)
+{
+    return App\Category::find($category);
+});
+
+
+// Inyeccion de dependencias a Usuarios
+
+Route::bind('user', function ($user)
+{
+    return App\User::find($user);
+});
+
+
+
+////// ***********************************************************
+
+
 Route::get('/', [
     'as' => 'stora',
     'uses' => 'StoreController@index'
@@ -98,7 +119,58 @@ Route::get('product/{slug}', [
     ]);
 
     */
-   
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// PayPal
+
+//Enviamos nuestro pedido a PayPal
+
+Route::get('payment', array(
+    'as' => 'payment',
+    'uses' => 'PaypalController@postPayment',
+));
+
+// Después de realizar el pago, PayPal redirecciona a esta ruta
+Route::get('payment/status', array(
+    'as' => 'payment.status',
+    'uses' => 'PaypalController@getPaymentStatus',
+));
+
+// ADMIN.............
+
+Route::group(['namespace' => 'Admin', 'middleware' => ['auth'], 'prefix' => 'admin', 'middleware' => 'admin'], function()
+{
+
+    Route::get('home', function (){
+        return view('home');
+    });
+    
+    Route::resource('category', 'CategoryController');
+    
+    Route::resource('product', 'ProductController');
+    
+    Route::resource('user', 'UserController');
+    
+    
+    // Peticion para lostarlos en nuetsro panel
+    
+    Route::get('orders', [
+        
+        'as' => 'admin.order.index',
+        'uses' => 'OrderController@index'
+    ]);
+    
+    Route::post('order/get-items', [
+        'as' => 'admin.order.getItems',
+        'uses' => 'OrderController@getItems'
+    ]);
+    
+    Route::get('order/{id}', [
+        'as' => 'admin.order.destroy',
+        'uses' => 'OrderController@destroy'
+    ]);    
+    
+});
