@@ -172,5 +172,13 @@ Route::group(['namespace' => 'Admin', 'middleware' => ['auth'], 'prefix' => 'adm
         'as' => 'admin.order.destroy',
         'uses' => 'OrderController@destroy'
     ]);    
-    
+
 });
+
+
+    // Firebase
+
+    Route::get('firebase',[
+        'as' => 'firebase',
+        'uses' => 'FirebaseController@index'
+    ]);

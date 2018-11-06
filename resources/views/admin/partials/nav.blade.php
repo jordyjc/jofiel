@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            {!! link_to('admin/home', "Stora", $attributes = array('class' => 'navbar-brand main-title')) !!}
+            {!! link_to('admin/home', "Jofiel", $attributes = array('class' => 'navbar-brand main-title')) !!}
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
