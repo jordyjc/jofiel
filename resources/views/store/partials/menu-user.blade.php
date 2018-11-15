@@ -3,7 +3,7 @@
             
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" 
             role="button" aria-haspopup="true" aria-expanded="false">
-                <i class=" fa fa-user"></i> {{ Auth::user()->user }}
+                <i class=" fa fa-user fa-2x"></i> {{ Auth::user()->user }}
         </a>
         
         <ul class="dropdown-menu dropdown-menu-right">
@@ -34,7 +34,7 @@
             
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" 
             role="button" aria-haspopup="true" aria-expanded="false">
-                <i class=" fa fa-user"></i>
+                <i class=" fa fa-user fa-2x"></i>
         </a>
         
         <ul class="dropdown-menu dropdown-menu-right">
@@ -46,5 +46,5 @@
             <a class="dropdown-item" href="{{ route('register') }}">Registrarse</a>
         </li>
         </ul>
-    </div>
+    </div> 
 @endif

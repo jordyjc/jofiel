@@ -1,4 +1,4 @@
-<footer class="container_fluid">
+<footer class="container_fluid"  style="width: 99.9% !important">
     <div class="row">
         <div class="col-md-4">
             <h3>Stora</h3>

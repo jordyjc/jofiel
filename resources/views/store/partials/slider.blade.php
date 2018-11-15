@@ -1,4 +1,4 @@
-<div id="slider" class="carousel slide" data-ride="carousel">
+<div id="slider" class="carousel slide" data-ride="carousel" style="width: 99.9% !important">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#slider" data-slide-to="0" class="active"></li>
